@@ -4,6 +4,11 @@ function getInputFieldValueById(inputId) {
     const inputFieldValueString = inputField.value;
     const inputFieldValue = parseFloat(inputFieldValueString);
     inputField.value = '';
+    if (isNaN(inputFieldValue)) {
+        alert('Please Enter Number')
+        return 0;
+    }
+
     return inputFieldValue;
 }
 
@@ -20,4 +25,5 @@ function getElementValueById(elementId) {
 function setTextValueById(elementId, newQuantity) {
     const totalQuantity = document.getElementById(elementId);
     totalQuantity.innerText = newQuantity;
+
 }
