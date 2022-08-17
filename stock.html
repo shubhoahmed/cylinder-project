@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl font-bold mt-6 text-center">Welcome to <SPan class="text-yellow-300">myStock</SPan>
+        </h1>
+    </header>
+    <main>
+        <section class="grid grid-cols-3 gap-4 mt-12 w-9/12 mx-auto">
+            <div class="bg-green-400 p-6">
+                <h1 class="text-3xl font-bold">Purches</h1>
+                <h2 class="text-5xl font-bold" id="old-purches">00</h2>
+            </div>
+            <div class="bg-rose-400 p-6">
+                <h1 class="text-3xl font-bold">Sells</h1>
+                <h2 class="text-5xl font-bold">00</h2>
+            </div>
+            <div class="bg-blue-400 p-6">
+                <h1 class="text-3xl font-bold">Stock</h1>
+                <h2 class="text-5xl font-bold" id="old-stock">1000</h2>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-2 gap-6 mt-12 w-9/12 mx-auto">
+            <div class="bg-cyan-400 p-6">
+                <h1 class="text-2xl font-bold">Purches Quantity</h1>
+                <input class=" mt-3 p-2 w-6/12 block" type="email" name="" id="purches-field"
+                    placeholder="Enter Purches Quantity ">
+
+                <button class="mt-6 px-6 py-2 font-semibold bg-yellow-200 rounded-md" id="btn-purches">Submit</button>
+            </div>
+            <div class="bg-teal-400 p-6">
+                <h1 class="text-2xl font-bold">Sells Quantity</h1>
+                <input class=" mt-3 p-2 w-6/12 block" type="email" name="" id="sells-field"
+                    placeholder="Enter Sells Quantity ">
+
+                <button class="mt-6 px-6 py-2 font-semibold bg-yellow-200 rounded-md" id="btn-sells">Submit</button>
+            </div>
+
+        </section>
+    </main>
+    <script src="js/utilities.js"></script>
+    <script src="js/purches.js"></script>
+    <script src="js/sells.js"></script>
+</body>
+
+</html>
